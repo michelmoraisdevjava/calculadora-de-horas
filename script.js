@@ -1,3 +1,4 @@
+
 const form = document.querySelector('form');
 const inputIntervalo = document.querySelector('#intervalo');
 const btnCalcular = document.querySelector('#calcular');
