@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cores */
+:root {
+  --cor-fundo: #1c1c1e;
+  --cor-fundo-escuro: #141418;
+  --cor-texto: #f2f2f7;
+  --cor-texto-secundario: #8e8e93;
+  --cor-destaque: #007aff;
+}
+
+/* Fonte */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  color: var(--cor-texto);
+  background-color: #333;
+  font-size: 16px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-fundo-escuro);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Corpo */
+main {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.resultado {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-fundo-escuro);
+  color: var(--cor-texto-secundario);
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  header {
+    padding: 30px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+
+  header {
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    width: 40%;
+  }
+}
