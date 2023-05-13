@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de horas</title>
+  <title>MedTime</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Horário de medicamento</h1>
+    <h1>MedTime</h1>
   </header>
   <main>
     <form>
-      <label for="intervalo">Intervalo (em horas):</label>
-      <input type="number" id="intervalo" name="intervalo" min="1" required>
+      <div class="form-row">
+        <label for="intervalo">Intervalo (em horas):</label>
+        <input type="number" id="intervalo" name="intervalo" min="1" required>
+      </div>
+      <div class="form-row">
+        <label for="tempo">Quantidade em dias:</label>
+        <input type="number" id="tempo" name="tempo" min="1" >
+      </div>
       <button type="submit" id="calcular" class="btn-calcular">Calcular</button>
     </form>
 
